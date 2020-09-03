@@ -247,11 +247,12 @@ public class User extends DateAudit {
 
 	public void setRoles(List<Role> roles) {
 
-		if (roles == null) {
-			this.roles = null;
-		} else {
-			this.roles = Collections.unmodifiableList(roles);
-		}
+//		if (roles == null) {
+//			this.roles = null;
+//		} else {
+//			this.roles = Collections.unmodifiableList(roles);
+//		}
+		this.roles = roles;
 	}
 
 	public List<Comment> getComments() {
